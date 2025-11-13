@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MOVE+ — Estilo que Impõe Respeito</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+      }
+      .btn-common {
+        background: #d4af37;
+        border: none;
+        color: #000;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .btn-common:hover {
+        background: #fff;
+        color: #000;
+      }
+      header {
+        background: linear-gradient(rgba(12, 21, 36, 0.7), rgba(0, 0, 0, 0.9)),
+          url("img/hero-bg.jpg") center/cover no-repeat;
+        height: 100vh;
+        text-align: center;
+        color: white;
+      }
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .section {
+        padding: 80px 0;
+      }
+      .section-title {
+        color: #d4af37;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      hr.lines {
+        width: 60px;
+        height: 4px;
+        background: #d4af37;
+        border: none;
+        margin: 20px auto;
+      }
+      .highlight-icon {
+        color: #d4af37;
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25d366;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        z-index: 999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      /* ---- Catálogo ---- */
+      .product-card {
+        background: #0c1524;
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        transition: 0.3s;
+        border: 1px solid #1b263b;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+      }
+      .product-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .product-card h4 {
+        color: #d4af37;
+        font-weight: bold;
+      }
+      .product-card p {
+        color: #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/m1.png" alt="MOVE+" height="40" />
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+          <i class="fa fa-bars" style="color: #d4af37"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#hero-area" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Serviços</a></li>
+            <li class="nav-item"><a href="#catalogo" class="nav-link">Catálogo</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero-area">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh">
+          <h1 class="wow fadeInDown">MOVE+ — Estilo que Impõe Respeito</h1>
+          <p class="lead wow fadeInUp">
+            Moda. Perfume. Lifestyle. Energia e confiança num só lugar.
+          </p>
+          <a
+            href="https://wa.me/244951614818?text=Olá,+quero+ver+o+catálogo+da+MOVE+!"
+            class="btn btn-common wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            Ver Catálogo
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- SERVIÇOS -->
+    <section id="services" class="section text-center">
+      <div class="container">
+        <h2 class="section-title">MOVE+ Experience</h2>
+        <hr class="lines" />
+        <p>
+          Transformamos estilo em atitude. Encontra aqui a combinação perfeita
+          entre moda, fragrância e energia.
+        </p>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <i class="fa fa-tshirt highlight-icon"></i>
+            <h4>Moda Urbana</h4>
+            <p>T-shirts, hoodies e bonés com design exclusivo MOVE+.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa fa-spray-can highlight-icon"></i>
+            <h4>Perfumes</h4>
+            <p>Fragrâncias que impõem respeito e marcam presença.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa fa-dumbbell highlight-icon"></i>
+            <h4>Fitness</h4>
+            <p>Conjuntos esportivos e acessórios que te movem com estilo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO INTERATIVO -->
+    <section id="catalogo" class="section text-center" style="background-color: #000">
+      <div class="container">
+        <h2 class="section-title">Catálogo MOVE+</h2>
+        <hr class="lines" />
+        <div class="row mt-5">
+          <!-- Produto 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="product-card wow fadeInUp">
+              <img src="img/Perfume.jpg" alt="Perfume MOVE+ Spirit" />
+              <h4>Perfume MOVE+ Spirit</h4>
+              <p>Fragrância sofisticada e marcante para qualquer ocasião.</p>
+              <a
+                href="https://wa.me/244951614818?text=Estou+interessado+neste+produto!"
+                class="btn btn-common"
+                >Falar no WhatsApp</a
+              >
+            </div>
+          </div>
+
+          <!-- Produto 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="product-card wow fadeInUp" data-wow-delay="0.2s">
+              <img src="img/LIFESTYLE.jpg" alt="T-shirt MOVE+ Oversize" />
+              <h4>T-shirt MOVE+ Oversize</h4>
+              <p>Conforto e estilo urbano em cada detalhe.</p>
+              <a
+                href="https://wa.me/244951614818?text=Estou+interessado+neste+produto!"
+                class="btn btn-common"
+                >Falar no WhatsApp</a
+              >
+            </div>
+          </div>
+
+          <!-- Produto 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="product-card wow fadeInUp" data-wow-delay="0.4s">
+              <img src="img/M+ FITNESS.jpg" alt="Conjunto Fitness MOVE+" />
+              <h4>Conjunto Fitness MOVE+</h4>
+              <p>Performance e atitude em movimento.</p>
+              <a
+                href="https://wa.me/244951614818?text=Estou+interessado+neste+produto!"
+                class="btn btn-common"
+                >Falar no WhatsApp</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNDADOR -->
+    <section class="section text-center" style="background-color: #0c1524">
+      <div class="container">
+        <h2 class="section-title" style="color: #d4af37">Fundador</h2>
+        <img
+          src="img/features/wsw.jpg"
+          alt="João Paulo Alexandre Caingona"
+          style="width: 150px; border-radius: 50%; margin: 20px 0"
+        />
+        <h4>João Paulo Alexandre Caingona</h4>
+        <p>
+          CEO & Fundador da MOVE+ — Inspirando atitude, confiança e
+          autenticidade.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section text-center">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <hr class="lines" />
+        <p>📍 Luanda, Angola</p>
+        <p>📞 (+244) 951 614 818</p>
+        <p>📧 contacto@moveplus.ao</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center" style="padding: 20px; background: #000">
+      <p style="color: #d4af37">
+        © 2025 MOVE+ — Estilo que Impõe Respeito.
+      </p>
+    </footer>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a
+      href="https://wa.me/+244951614818?text=Olá,+quero+saber+mais+sobre+a+MOVE+"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
